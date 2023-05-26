@@ -1,0 +1,109 @@
+:root{
+    --wh: 100px;
+    --wh2: 75px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    height: 1000px;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 350px;
+    height: 520px;
+    text-align: center;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 1px 2px 20px rgba(19, 15, 235, 0.1);
+    position: relative;
+}
+
+.avatar{
+    border-radius: 50px;
+    width: var(--wh);
+    height: var(--wh);
+    position: absolute;
+    left: calc(50% - (var(--wh)/2));
+    top: calc(var(--wh) / -2);
+}
+
+
+.footer{
+    border-top: 1px solid gray;
+    padding-top: 15px;
+    margin-top: 20px;
+}
+
+.footer h3, .footer p{
+    margin: 5px 0px;
+    text-align: left;
+}
+
+.iconsCon{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.icon1, .icon2{
+    width: 35px;
+    height: 35px;
+    padding: 8px;
+    border: 1px solid rgb(76, 15, 251);
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 12px;
+}
+
+
+input[type="checkbox"]#linkedin{
+    content: url("/images/lp.png");
+    appearance: none;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #4c0ffb;
+    border-radius: 50px;
+    background-color: white;
+    margin-right: 10px;
+    margin-left: 0px;
+}
+
+input[type="checkbox"]#linkedin:hover{
+    content: url("/images/lw.png");
+    background-color: #4c0ffb;
+}
+
+input[type="checkbox"]#github{
+    content: url("/images/gp.png");
+    appearance: none;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #4c0ffb;
+    border-radius: 50px;
+    background-color: white;
+    margin-right: 10px;
+    margin-left: 0px;
+}
+
+input[type="checkbox"]#github:hover{
+    content: url("/images/gw.png");
+    background-color: #4c0ffb;
+}
+
+
+
+
+
+
